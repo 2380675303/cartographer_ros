@@ -44,6 +44,7 @@ endif()
 find_package(Boost REQUIRED COMPONENTS system iostreams)
 find_package(PCL REQUIRED COMPONENTS common)
 
+set(cartographer_DIR /home/ys/SLAM_WS/2d_slam/cartographer_ws/src/cartographer/lib/cartographer/share/cartographer/)
 find_package(cartographer REQUIRED)
 include("${CARTOGRAPHER_CMAKE_DIR}/functions.cmake")
 option(BUILD_GRPC "build features that require Cartographer gRPC support" false)
